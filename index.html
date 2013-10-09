@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang=en>
+  <head>
+    <title>A Simple Explanation of Bitcoin</title>
+    <meta charset="UTF-8">
+    <link type="image/png" rel="shortcut icon" href="/pic/favicon.png" />
+    <meta name=keywords content="bitcoin, BTC, mBTC, howto, beginner’s guide, introduction, howto">
+    <meta name=author content="zrajm">
+    <meta name=description content="A brief introduction to Bitcoin for non-technical people.">
+    <link href="style.css?soeuhrx" rel=stylesheet>
+  </head>
+  <body>
+    <!-- FIXME:
+         o Implement "Readability" Article Publishing Guidelines fully
+           http://www.readability.com/developers/guidelines#reader
+         o CSS for definition list should look like bullet list
+         o Add *Why* section, motivating usefulness of Bitcoin
+           * Transfer money cheaply over great distances
+           * Transfer money easily between individuals
+           * Exchange rate
+             + Boon to those seeking to invest
+             + Drawback for those using the currency for everyday activities
+           * Email Jane Ratten <janeratten@iinet.net.au> when this is written
+         o Use a vanity bitcoin address beginning with '1zrajm...'(?)
+      -->
+    <div class=wrap>
+    <acticle class=hentry>
+
+      <h1 class="entry-title">A Simple Explanation of Bitcoin</h1>
+
+      <blockquote class="entry-summary">This is a non-technical introduction to
+        Bitcoin (a “Bitcoin for Dummies” if you will). I'm attempting to
+        describe how to use Bitcoin and what its good for, but without drowning
+        you in technical detail.
+
+        <br><span class=pale>
+          <time pubdate datetime="2012-10-16">October, 2012</time>
+          (updated <time datetime="2013-09-29T19:27:37Z">September, 2013</time>)
+        </span>
+      </blockquote>
+
+    <div class="pale">
+      <script src="coin.js"></script>
+      <script>
+        CoinWidgetCom.go({
+          wallet_address: "1zrajm4H53pHfe9F1a1fNctFCKRTg6MjA",
+          currency: "bitcoin",
+          counter: "count",
+          alignment: "bl",
+          qrcode: true,
+          auto_show: false,
+          lbl_button: "Donate Bitcoin",
+          lbl_address: "Zrajm’s Bitcoin Address:",
+          lbl_count: "donations",
+          lbl_amount: "BTC"
+        });
+      </script> If you like this article, consider donating! (25 m<small>BTC</small>, maybe?)
+      </div>
+
+
+
+      <figure class=right>
+        <img src="bitcoin.svg" height=137 width=100 class=logo>
+        <figcaption>Bitcoin symbol.</figcaption>
+      </figure>
+
+      <p>Bitcoin is a digital currency. In order to make it secure, the
+        underlying architecture is quite complex. I’ll here try to cover what
+        you need to know to use Bitcoin, rather than try to explain it all.
+        (There are plenty of <a href="#references">other resources</a>, if you
+        want to know more about the nitty gritty.)
+
+      <p>The symbols <b>Ƀ</b> and <b>฿</b> are used, as well as the symbol to
+        the right. Bitcoin also have its own currency
+        abbreviation: <i><abbr>BTC</abbr>.</i> In practice
+        however, <a href="http://preev.com/btc/usd">a single Bitcoin is so
+        expensive</a> that the term
+        milli-Bitcoin <nobr>(or <i>m<abbr>BTC</abbr></i>)</nobr> is frequently
+        used. (Though an everyday name for them has yet to be established –
+        <i><a href="https://en.bitcoin.it/wiki/MilliBit">Millibits?
+        Millies?</a> <a href="https://bitcointalk.org/index.php?topic=198316.msg2064590#msg2064590">Bitties?</a> <a href="http://konradsgraf.com/blog1/2013/6/3/the-ms-and-bs-of-millibitcoin-redenomination.html">Embies?</a></i>
+        or just <i><a href="https://bitcointalk.org/index.php?topic=8282.msg133269#msg133269">Bits</a>,</i> maybe?)
+
+      <section>
+        <h2>What Are Bitcoins Like?</h2>
+
+        <p><b>Bitcoin is more similar cash</b> (i.e. bills and coins) than any
+          other electronic money system. You can transfer Bitcoin to (and
+          receive Bitcoin from) anyone you want, no one can stop you, and you
+          can transfer money anonymously. Once you’ve transferred an amount to
+          someone else – it’s gone. (You can ask the recipient to transfer the
+          money back to you, but it is not possible to stop the transaction.)
+          There are also <em>no limits</em> on how little, or how much, you’re
+          allowed to transfer.
+
+        <p>Your Bitcoins are stored in a <i>wallet</i> (on your computer, or on
+          one of the <i>eWallet</i> providers). Anyone who can read your
+          wallet, can also access your money. (Yes, your wallet can be stolen –
+          but you can also encrypt your wallet so that the thief is unable to
+          access its content.) If you lose your wallet, you lose your money
+          (just like with the wallet in your pocket). But you can make any
+          number of backups of your wallet.
+
+        <p><b>Bitcoin is <i>unlike</i> cash</b> in that it can be sent over the
+          Internet. <!-- FIXME: transfer costs? -->
+      </section>
+
+      <section>
+        <h2>Why Bitcoin?</h2>
+
+        <p>Some people would try to convince you that Bitcoin is good for
+          various ideologial reasons (e.g. because it's free, anonymous or
+          non-centralized), and while some of us humans still have ideologies
+          that we hold dear, people tend to adopt technologies that makes life
+          easier rather than more just.
+
+        <p>So how do you benefit from using Bitcoin?
+
+        <p><b>It's cheap.</b> Each transaction costs a little something, but
+          the charge I really small (compared to what the banks charge for
+          transfers using their credit or debit cards). <!-- FIXME: How expensive?
+          Flat rate or percentage? -->
+
+        <p>Also the money you pay go to the people maintaining the Bitcoin
+          computer network (and if you want to join them you can set up your
+          own server and receive money for handling other people's
+          transactions).
+
+        <p><b><i>Anyone</i> can send and receive Bitcoin.</b> – Sure, you can
+          pay for your coffee, buy a new bed, or pay your rent with Bitcoin
+          (assuming your local coffeeshop, furniture store and housing company
+          take the currency) but <nobr>– unlike</nobr> with Visa
+          or <nobr>MasterCard –</nobr> you’re not limited to transferring money
+          to companies, shops and businesses. You can just as easily transfer
+          Bitcoin to a friend to pay what you owe her for the beer last night,
+          you can buy a secondhand bookshelf at a garage sale or pay the
+          neighbours kid's when they cut that lawn for you. And when some
+          random stranger offers you serious money for that *ridiculous* straw
+          hat that you found in your grandmother's attic; all you need to do is
+          whisk out your smartphones, have the stranger scan your Bitcoin
+          address off your screen and transfer the amount to you, when you see
+          the money appear in your account you can walk off secure in you
+          knowledge that no one can ever step in and reverse that payment.
+
+        <p><b>You can send money <i>anywhere.</i></b> Transferring money to the
+          other side of the world is no harder then sending it to someone you
+          meet face to face. In fact, the procedure (and the transaction
+          charge) is exactly the same. If normal money transfers are cheap by
+          Visa/MasterCard standards, international money transfers as
+          fantastically cheap compared to the usual fees. In fact, if you often
+          transfer money abroad you might find Bitcoin worth looking into *only
+          because of this.*
+
+        <p>Instead of scanning a barcode off a screen (as you'd do when paying
+          someone just in front of you) you'll probably send the Bitcoin
+          address by email.
+
+
+        <!-- p><b>No complications.</b> -->
+
+
+
+      
+
+      <section>
+        <h2><em>Where</em> Are My Bitcoins?</h2>
+
+        <p>Picture it like this: There exist a special kind of transparent
+          magic piggy bank – it is special kind of piggy bank because it is
+          unbreakable, unpickable, and it also magically appears whenever
+          anyone calls out its name. There is no way to take money out of it
+          unless you have the key, but anyone can call for it, see what’s
+          inside, and put more money into it.
+
+        <figure class=right>
+          <img src="piggy_bank.png" height=267 width=360>
+          <figcaption>Special magic piggy bank.</figcaption>
+        </figure>
+
+    <p>And – as if that was not enough – there are <em>millions upon
+      millions</em> of these magic piggy banks, and <em>anyone</em> can create
+      new ones. In the piggy-creation-process a key to the piggy is created as
+      well (the creator always gets a key). But after that, the key can be
+      copied, given away, or even stolen, lost or destroyed.
+
+    <p>Each piggie bank is a Bitcoin address, and in your wallet you have the
+      keys which open your piggies – if you lose or delete your wallet then the
+      money’s still out there, but no one (including yourself) can use them any
+      more. If someone manages to steal your wallet, then they can also take
+      your money. If you make many copies of your wallet, you don’t get more
+      money, but you lessen the risk of you accidentally losing all your
+      wallets.
+
+    <p><strong>Note:</strong> If you have an eWallet provider you’re then
+      entrusting them with your keys. If the provider get hacked, someone may
+      grab your keys, then your money. (This has happened in the past, google
+      “mybitcoin.com” for a horrific example.)
+  </section>
+
+  <section>
+    <h2>What Makes It Different From a Bank?</h2>
+
+    <p>With Bitcoin there is no one central bank, instead there is a huge
+      network of computers working together. People who participate in this
+      network are rewarded (in Bitcoin, of course) and anyone can join (and
+      leave) at any time without disrupting the network. There is no one
+      central authority that takes care of all the Bitcoins, instead, when you
+      do a transaction, you help doing a little bit of the work.
+
+    <p>And then there is Bitcoin <i>mining,</i> but it’s a whole other thing
+      that we won’t go into here (it’s not relevant for just sending and
+      receiving Bitcoin).
+  </section>
+
+  <section>
+    <h2>I Hear It’s Anonymous, Is That True?</h2>
+
+    <p>Sorta. All transactions to and from <i>an address</i> are fully
+      traceable, back until the beginning of time (this in needed for the
+      system to stay secure). However the system does not store any personal
+      information about the owners of the addresses, and anyone can have an
+      unlimited number of addresses making it impossible to trace
+      transactions.
+
+    <p><strong>Note:</strong> Bear that in mind if you <i>publish</i> an
+      address (e.g. on the Internet) together with your name or other personal
+      details then the fact that you own that address will be out, and anyone
+      can see how much money you have there (though they will still not know if
+      you have money in other addresses). The way the system is buildt, anyone
+      can look up the current (and any past) balance of <em>any</em> account.
+
+      <p>It’s very easy to create new addresses, and people often do that to
+      increase anonymity, or just to easier spot where the money come from. If
+      I, for example, rent out stuff I could give each customer their own
+      payment address, so I can easily keep track of who paid what. Or I can
+      have one address for donations to my web page, and one for my ice cream
+      business. (All Bitcoin wallet programs allow you to attach a note to
+      every address so you don’t have remember everything in your head.)
+  </section>
+
+  <section>
+    <h2 id=software>Choosing Software</h2>
+
+    <p><i>Speed</i> is the thing that differ most between different Bitcoin
+      programs. Since your money exists only as a paper trail on the Bitcoin
+      network’s servers, that paper trail will have to be downloaded before you
+      can do any transactions. In some programs this is <i>horribly,
+      horribly</i> slow (taking days, and downloading tens of gigabytes of
+      data). <nobr>– If</nobr> you find your program to be this slow, you’ve
+      chosen the wrong one, try installing something different.
+  </section>
+
+  <section>
+    <h2 id=terms>Some Terms Used</h2>
+
+    <p><b>Address</b> or <i>account</i> (above also described as <i>“special
+      magic piggy bank”</i>) Your “account number” (34 character long mixture
+      of letters and digits), you need someone’s address in order to send them
+      money. Any person can have an unlimited number of accounts.
+
+    <p><b>Wallet</b> – A file containing <i>private keys,</i> one for each
+      Bitcoin address. Contrary to its name, a Bitcoin wallet does not contain
+      any actual <i>money</i> (all money is publicly stored in the Bitcoin
+      server network), instead a wallet only contains a list of private keys,
+      each allowing you to move Bitcoin from from one associated address
+      (whomever have a private key for an address can spend the money there).
+
+    <p>Make many copies of your wallet (if you lose them all, you lose the
+      ability to spend those Bitcoin) <nobr>– but</nobr> make sure <i>all</i>
+      your copies are secure (anyone who gain access to your private keys, can
+      spend your money). All Bitcoin programs allow you to encrypt your wallet
+      with a password.
+
+    <p>The wallet does not explicitly contain Bitcoin addresses, as these are
+      automatically calculated from the private key.
+
+  </section>
+
+  <section>
+    <h2 id=references>References</h2>
+    <p>Below are links to several not-quite-so-simple explanations of what
+      Bitcoin is, and how it works.
+
+    <dl>
+      <dt><i><a href="https://multibit.org/">MultiBit Bitcoin client</a></i>
+      <dd>A good multi-platform Bitcoin client. Even though it is written in
+        Java it seems surprisingly fast and lightweight. (As opposed to the
+        Ubuntu/Debian-distributed <code>bitcoin-qt</code>, which needs to
+        download tens of gigabites of data <nobr>– <i>taking days</i> –</nobr>
+        before one can start to transfer money.)
+
+      <dt><a href="https://bitcointalk.org/index.php?topic=293472.msg3143493#msg3143493">Mycelium
+          Bitcoin Wallet</a> (Android)
+      <dd><i>Mycelium</i> is a Bitcoin Wallet for Android which is lightingly
+        fast and easy to use. You can download
+        <a href="https://play.google.com/store/apps/details?id=com.mycelium.wallet"><i>Mycelium</i>
+        from <i>Google Play</i></a>.
+
+      <dt><a href="http://bitcoin.org/">The Official Bitcoin Site<a>
+      <dd>Here you can download wallet programs for Windows, Mac OS X, Ubuntu
+        and other Unixes.
+
+      <dt><a href="https://blockchain.info/wallet">Blockchain’s eWallet
+          solution “My Wallet”</a>
+
+      <dd>Seems okayish. They state that your private keys never leave your
+        computer, and that all encryption/decryption takes place locally. They
+        also have various apps for browsers and mobile devices.
+
+      <dt><a href="http://redd.it/1b9sak">Alternatives to Mt. Gox (a discussion
+          thread on Reddit)</a>
+      <dd>A list of sites where one can buy and sell Bitcoin.
+
+      <dt><a href="https://mtgox.com/">Mt. Gox</a>
+      <dd>Commonly referred to site for buying and selling Bitcoin.
+
+      <dt><a href="http://en.wikipedia.org/wiki/Bitcoin">Bitcoin on
+          Wikipedia</a>
+      <dd>Article gives brief overview of technique, but far too little helpful
+        information for someone just wanting to <em>use</em> Bitcoin.
+
+      <dt><a href="http://blog.zorinaq.com/?e=66">Bitcoin: The Simplest
+          Nontechnical Explanation</a>
+      <dt><a href="https://bitcointalk.org/index.php?topic=52405.0">Bitcoin:
+          “Triple Entry Crowd Accounting”</a>
+      <dd>Two attempts at writing simpler descriptions of Bitcoin. Still not as
+        simple as this one though.
+
+      <dt><a href="http://blockexplorer.com/">Bitcoin Block Explorer</a>
+      <dd>View Bitcoin transaction history information. for the whole system.
+        Display blocks, addresses, and transactions created by Bitcoin.
+
+      <dt><a href="http://bitcoin.stackexchange.com/">Stackexchange
+          Bitcoin</a>
+      <dd>A whole Stackexchange site dedicated to Bitcoin, for the most part
+        this site contain very technical and detailed questions and
+        answers.
+
+      <dt><a href="http://bitcoin.org/bitcoin.pdf">Bitcoin: A Peer-to-Peer
+          Electronic Cash System</a>
+      <dd>Satoshi Nakamoto’s original academic proposal for Bitcoin.
+
+    </dl>
+  </section>
+
+  <section>
+    <h2 id=about>About This Text</h2>
+
+    <p>This was written after a couple of days reading up on, and playing with,
+      Bitcoin. Even after intense googling I could not find any text that
+      described Bitcoin in simple terms, from a user’s perspective, without
+      going into loads of technical details about the underlying
+      cryptography. <nobr>– I</nobr> basically wanted something that my mother
+      would be able to read and understand without too much effort.
+
+    <p>If you have ideas about what could be explained better (e.g. worded in
+      an even simpler way) or if you want to point out something crucial that
+      I’ve missed, please do so by sending an email to me
+      at <a href="mailto:zrajm@zrajm.org">zrajm@zrajm.org</a>.
+
+    <p>If you liked this page,
+      <a href="bitcoin:1AisXnHy9tvN7JmjtqPyoQzJoV3LrXC1Nb?amount=.025&message=Tip%20for%20zrajm.org%2Fbitcoin">feel
+      free to donate a couple of Millibits</a> as a way to say thanks. I’d
+      suggest 25 m<abbr>BTC</abbr> (the price of a cup of coffee) but anything
+      is appreciated.
+  </section>
+
+</article>
+
+<footer>
+  Written by <span class=author><a href="mail:zrajm@zrajm.org">zrajm</a></span>
+  <br><time pubdate datetime="2012-10-16">October 16th, 2012</time>–<time datetime="2013-09-29T19:27:37Z">September 29th, 2013</time>
+  <br><i><small>
+      <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel=license>Creative Commons BY-SA</a>.
+      <a href="bitcoin:1AisXnHy9tvN7JmjtqPyoQzJoV3LrXC1Nb?amount=.025&message=Tip%20for%20zrajm.org%2Fbitcoin">Give 25 m<small>BTC</small> tip!</a>
+  </small></i>
+</footer>
+
+    <!-- start-of-google-analytics -->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-5434527-1");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+    </script>
+    <!-- end-of-google-analytics -->
+</body>
+</html>
